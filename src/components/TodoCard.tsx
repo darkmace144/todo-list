@@ -16,6 +16,7 @@ const TodoCard = () => {
           done: boolean;
         }) => (
           <div
+            key={todo.id}
             className={`flex flex-col w-[20rem] h-[20rem] justify-between border border-gray-200 p-2 bg-white rounded-xl shadow-lg hover:skew-x-1 hover:-skew-y-1 duration-500 ${
               todo.done
                 ? "hover:shadow-green-500/50"
